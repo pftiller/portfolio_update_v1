@@ -45,19 +45,21 @@ a:hover {
     margin-right: auto;
     color: white;
 }
-.nav li {
-  padding: 5px 10px 10px 10px;
+.nav .home {
+ background: url('images/home.png') no-repeat 0 center;
 }
 .nav a {
   transition: all .5s;
+  width:100%;
+  padding: 5px 15px 10px 20px;
 }
 .nav a:hover {
-  color: white
+  color: white;
+  font-weight: 900;
 }
-
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/saintpaul.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -66,16 +68,25 @@ header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
+  margin-top: 25px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   border: 3px solid white;
-  transition: all .5s;
+  transition: all 1s;
+  -webkit-transition: all 1s; /* Safari */
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: rotate(360deg);
+  transform-origin: top left;
 }
+.background-header {
+  font-size:64px;
+  display: block;
+  margin:25px auto 0;
+  color: yellow;
+  text-shadow: 2px 2px 5px red;
+} 
 .tag {
   background-color: #efefef;
   color: black;
@@ -99,7 +110,7 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: orange;
 }
 
 ul.skills {
